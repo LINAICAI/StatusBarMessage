@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'StatusBarMessage_Example' do
+  pod 'StatusBarMessage', :path => '../'
+
+  target 'StatusBarMessage_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
