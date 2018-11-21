@@ -1,7 +1,8 @@
 use_frameworks!
 
 target 'StatusBarMessage_Example' do
-    pod 'StatusBarMessage', :path => '../'
+    #由于某些未知原因，在swift工程集成cocoapods模版后出现很奇怪的问题，具体表现就是每次修改源码，都要clear一下再build才生效，所以暂时不要用本地集成了，demo中直接引用反而没问题
+    #pod 'StatusBarMessage', :path => '../'
 
   target 'StatusBarMessage_Tests' do
     inherit! :search_paths

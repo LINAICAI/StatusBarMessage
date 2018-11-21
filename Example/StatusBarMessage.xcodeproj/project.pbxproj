@@ -15,6 +15,8 @@
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
 		AAA08627554B8FF31CF08451 /* Pods_StatusBarMessage_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 965E5527080281BCFACB264F /* Pods_StatusBarMessage_Tests.framework */; };
+		FA35E3B721A55CE800691964 /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = FA35E3B521A55CE800691964 /* .gitkeep */; };
+		FA35E3B821A55CE800691964 /* StatusBarMessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA35E3B621A55CE800691964 /* StatusBarMessageView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		C34FC3725AA6AA336D4D22BB /* Pods-StatusBarMessage_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StatusBarMessage_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-StatusBarMessage_Tests/Pods-StatusBarMessage_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		DA69720F739C9CEB9412DA0F /* Pods-StatusBarMessage_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StatusBarMessage_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-StatusBarMessage_Example/Pods-StatusBarMessage_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		DEDF919CFAFEAC0AD1B4D61E /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		FA35E3B521A55CE800691964 /* .gitkeep */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
+		FA35E3B621A55CE800691964 /* StatusBarMessageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatusBarMessageView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +108,7 @@
 		607FACD21AFB9204008FA782 /* Example for StatusBarMessage */ = {
 			isa = PBXGroup;
 			children = (
+				FA35E3B421A55CE800691964 /* Classes */,
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
 				607FACD71AFB9204008FA782 /* ViewController.swift */,
 				607FACD91AFB9204008FA782 /* Main.storyboard */,
@@ -159,6 +164,16 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		FA35E3B421A55CE800691964 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				FA35E3B521A55CE800691964 /* .gitkeep */,
+				FA35E3B621A55CE800691964 /* StatusBarMessageView.swift */,
+			);
+			name = Classes;
+			path = ../../StatusBarMessage/Classes;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -170,7 +185,6 @@
 				607FACCC1AFB9204008FA782 /* Sources */,
 				607FACCD1AFB9204008FA782 /* Frameworks */,
 				607FACCE1AFB9204008FA782 /* Resources */,
-				98B892405500EC4D3ED95D62 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -249,6 +263,7 @@
 				607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */,
 				607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */,
 				607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */,
+				FA35E3B721A55CE800691964 /* .gitkeep in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -298,24 +313,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		98B892405500EC4D3ED95D62 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-StatusBarMessage_Example/Pods-StatusBarMessage_Example-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/StatusBarMessage/StatusBarMessage.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/StatusBarMessage.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-StatusBarMessage_Example/Pods-StatusBarMessage_Example-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -325,6 +322,7 @@
 			files = (
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
+				FA35E3B821A55CE800691964 /* StatusBarMessageView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
