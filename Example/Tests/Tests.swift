@@ -1,5 +1,5 @@
 import XCTest
-import StatusBarMessage
+
 
 class Tests: XCTestCase {
     
