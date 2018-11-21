@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'StatusBarMessage'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of StatusBarMessage.'
+  s.summary          = 'pull down tips from top of status bar'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -18,16 +18,13 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+A very simple tips use to pull down from top of status bar
                        DESC
 
-  s.homepage         = 'https://github.com/李柰财/StatusBarMessage'
-  # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
+  s.homepage         = 'https://github.com/LINAICAI/StatusBarMessage'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { '李柰财' => 'linaicai@myzaker.com' }
-  s.source           = { :git => 'https://github.com/李柰财/StatusBarMessage.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
-
+  s.author           = { 'linaicai' => 'linaicai2012@gmail.com' }
+  s.source           = { :git => 'https://github.com/LINAICAI/StatusBarMessage.git', :tag => s.version.to_s }
   s.ios.deployment_target = '8.0'
   s.source_files = 'StatusBarMessage/Classes/**/*'
   s.frameworks = 'UIKit', 'Foundation'
