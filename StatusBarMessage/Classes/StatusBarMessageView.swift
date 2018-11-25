@@ -64,11 +64,14 @@ open class StatusBarMessage: UIView {
 
     }
     
-    public func dismiss(_ complete:@escaping () -> Void) -> Void{
+    public func dismiss(_ complete:(() -> Void)? = nil) -> Void{
         UIView.animate(withDuration: 0.2, animations: {
             self.frame = StatusBarMessage.originFrame()
         }) { (finish) in
             if finish{
+                guard let complete = complete else{
+                    return
+                }
                 complete()
             }
         }
